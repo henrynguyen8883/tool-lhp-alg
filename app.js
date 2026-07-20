@@ -137,6 +137,28 @@
     });
   });
 
+  // Lightbox for screenshots
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  document.querySelectorAll('[data-preview]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.preview;
+      const img = btn.querySelector('img');
+      if (!lightbox || !lightboxImg || !src) return;
+      lightboxImg.src = src;
+      lightboxImg.alt = img?.alt || 'Ảnh giao diện';
+      lightbox.showModal();
+    });
+  });
+
+  lightboxClose?.addEventListener('click', () => lightbox?.close());
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) lightbox.close();
+  });
+  lightbox?.addEventListener('cancel', () => lightboxImg && (lightboxImg.src = ''));
+
   // Reveal on scroll
   const reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
@@ -154,18 +176,5 @@
     reveals.forEach((el) => io.observe(el));
   } else {
     reveals.forEach((el) => el.classList.add('visible'));
-  }
-
-  // Soft pulse on active step chip
-  const smActive = document.querySelector('.sm-node.active');
-  if (smActive) {
-    setInterval(() => {
-      if (!document.getElementById('panel-luyen-dan')?.classList.contains('active')) return;
-      smActive.style.transition = 'box-shadow 0.6s ease';
-      smActive.style.boxShadow =
-        smActive.style.boxShadow === '0 0 20px rgba(94, 234, 212, 0.35)'
-          ? '0 0 8px rgba(94, 234, 212, 0.12)'
-          : '0 0 20px rgba(94, 234, 212, 0.35)';
-    }, 1400);
   }
 })();
