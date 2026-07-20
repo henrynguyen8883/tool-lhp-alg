@@ -695,6 +695,115 @@ section {
   line-height: 1.7;
 }
 
+/* ─── Screenshot preview ─── */
+.preview-gallery {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.preview-gallery--single {
+  grid-template-columns: 1fr;
+}
+
+.preview-gallery--stack {
+  grid-template-columns: 1fr;
+  max-height: min(78vh, 820px);
+  overflow-y: auto;
+  padding-right: 0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-muted) transparent;
+}
+
+.preview-shot {
+  margin: 0;
+}
+
+.preview-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.preview-zoom:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 28px 72px rgba(0, 0, 0, 0.5);
+}
+
+.preview-zoom:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.preview-zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.preview-shot figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.45;
+}
+
+.lightbox {
+  margin: auto;
+  padding: 0;
+  border: none;
+  max-width: min(96vw, 520px);
+  max-height: 96vh;
+  background: transparent;
+  overflow: visible;
+}
+
+.lightbox::backdrop {
+  background: rgba(6, 8, 16, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.lightbox-img {
+  display: block;
+  width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface-solid);
+  color: var(--fg);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s var(--ease);
+}
+
+.lightbox-close:hover {
+  background: var(--surface-elevated);
+}
+
 .log-line { color: var(--muted); }
 .log-line .t { color: #7A8499; }
 .log-line .ok { color: var(--success); }
