@@ -743,6 +743,78 @@ section {
   border-block: 1px solid var(--border);
 }
 
+.license-warning {
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(240, 113, 120, 0.55);
+  background:
+    linear-gradient(135deg, rgba(240, 113, 120, 0.18) 0%, rgba(224, 164, 88, 0.08) 100%),
+    rgba(40, 12, 16, 0.85);
+  box-shadow:
+    0 0 0 1px rgba(240, 113, 120, 0.15),
+    0 12px 40px rgba(240, 113, 120, 0.12);
+  animation: warningPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes warningPulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(240, 113, 120, 0.15), 0 12px 40px rgba(240, 113, 120, 0.12); }
+  50% { box-shadow: 0 0 0 2px rgba(240, 113, 120, 0.35), 0 16px 48px rgba(240, 113, 120, 0.22); }
+}
+
+.license-warning-badge {
+  flex-shrink: 0;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--danger);
+  color: #1a080a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.license-warning-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffb4b8;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.45rem;
+}
+
+.license-warning-body p {
+  font-size: 0.9rem;
+  color: #e8d0d2;
+  line-height: 1.55;
+  margin-bottom: 0.45rem;
+}
+
+.license-warning-body p:last-child {
+  margin-bottom: 0;
+}
+
+.license-warning-body strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.license-warning-body a {
+  color: var(--accent-soft);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.2s var(--ease);
+}
+
+.license-warning-body a:hover {
+  color: #fff;
+}
+
 .bookmark-hint {
   margin-bottom: 1.5rem;
   padding: 0.9rem 1.15rem;
@@ -1128,6 +1200,11 @@ section {
   }
 
   .btn-copy { width: 100%; justify-content: center; }
+
+  .license-warning {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 
   .contact-box {
     flex-direction: column;
