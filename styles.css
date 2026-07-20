@@ -255,20 +255,53 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .hero-brand {
+  margin-bottom: 0.85rem;
+  opacity: 0;
+  animation: riseIn 0.9s var(--ease) 0.15s forwards;
+}
+
+.hero-brand-main {
+  display: block;
   font-family: var(--font-display);
   font-size: clamp(2.75rem, 7vw, 4.75rem);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.01em;
-  margin-bottom: 1.25rem;
-  opacity: 0;
-  animation: riseIn 0.9s var(--ease) 0.15s forwards;
 }
 
-.hero-brand em {
+.hero-brand-main em {
   font-style: italic;
   color: var(--accent);
   font-weight: 500;
+}
+
+.hero-sects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+  margin-bottom: 1.35rem;
+  opacity: 0;
+  animation: riseIn 0.9s var(--ease) 0.22s forwards;
+}
+
+.hero-sect {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--accent-soft);
+  text-shadow: 0 0 24px var(--accent-glow);
+}
+
+.hero-sect-sep {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--jade);
+  box-shadow: 0 0 12px rgba(94, 234, 212, 0.55);
+  opacity: 0.85;
 }
 
 .hero-headline {
@@ -1100,6 +1133,104 @@ section {
 
 .arch-icon svg { width: 20px; height: 20px; }
 
+/* ─── Team / Developers ─── */
+.team-section {
+  padding-top: 5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.team-card {
+  display: flex;
+  gap: 1.15rem;
+  align-items: flex-start;
+  padding: 1.5rem 1.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.team-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.team-avatar {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: var(--accent-muted);
+  color: var(--accent);
+  border: 1px solid var(--border-strong);
+}
+
+.team-avatar--accent {
+  background: var(--jade-muted);
+  color: var(--jade);
+  border-color: rgba(94, 234, 212, 0.35);
+}
+
+.team-info h3 {
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.team-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--jade);
+  margin-bottom: 0.55rem !important;
+}
+
+.team-info p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.team-note {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 0.9rem 1.15rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.team-note p {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.team-note a {
+  color: var(--accent-soft);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.team-note a:hover {
+  color: var(--fg);
+}
+
 /* ─── Contact ─── */
 .contact-section {
   padding-top: 5rem;
@@ -1313,6 +1444,10 @@ section {
   .license-warning {
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-box {
