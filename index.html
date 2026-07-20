@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HH3D Companion — Bộ công cụ tu luyện tự động</title>
+  <meta name="description" content="FullHD, Khoáng Mạch và Luyện Đan — tự động nhật trình, chiếm mỏ và luyện đan trên HH3D. Sao chép bookmark để dùng ngay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D4A574'/%3E%3Cpath d='M32 12l4 14h14l-11 8 4 14-11-8-11 8 4-14-11-8h14z' fill='%230A0C14'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" aria-label="HH3D Companion">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.1L12 16.8 5.7 20.7 8 13.6 2 9.2h7.6L12 2z"/></svg>
+        </span>
+        <span class="brand-name">HH3D <span>Companion</span></span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#tools">Công cụ</a></li>
+          <li><a href="#flow">Cách dùng</a></li>
+          <li><a href="#bookmark">Bookmark</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="nav-cta">Hỗ trợ</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="https://i.pinimg.com/1200x/ed/62/bb/ed62bb51370177d43da7e0bad9a066be.jpg"
+          alt=""
+          width="1200"
+          height="800"
+          fetchpriority="high"
+        >
+        <div class="hero-veil"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="wrap hero-content">
+        <h1 class="hero-brand">HH3D <em>Companion</em></h1>
+        <p class="hero-headline">Tự động chạy full action daily, chiếm mỏ khoáng và luyện đan — ngay trên trình duyệt.</p>
+        <p class="hero-sub">Sao chép bookmark, mở trang HH3D, bấm một lần là panel hiện ra và chạy giúp bạn.</p>
+        <div class="hero-actions">
+          <a href="#bookmark" class="btn btn-primary">
+            Lấy bookmark
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#tools" class="btn btn-ghost">Xem công cụ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Bộ công cụ</span>
+          <h2>Bốn hoạt động, một companion</h2>
+          <p>Chọn đúng công cụ theo việc bạn muốn tự động — không cần cài app, không cần mở nhiều tab thủ công.</p>
+        </div>
+        <div class="tools-grid">
+          <button type="button" class="tool-panel reveal" data-tool="fullhd" data-tab="fullhd">
+            <div class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 6h16v10H4zM8 20h8M12 16v4"/><path d="M8 10h2M14 10h2"/></svg>
+            </div>
+            <div class="tool-file">Full Action Daily</div>
+            <h3>FullHD</h3>
+            <p>Làm hộ các việc hàng ngày: điểm danh, vấn đáp, hoang vực, phúc lợi, tông môn và nhiều hơn.</p>
+            <div class="tool-tags">
+              <span class="tag">Tự chạy theo lịch</span>
+              <span class="tag">Giao diện vàng</span>
+              <span class="tag">Theo VIP</span>
+            </div>
+          </button>
+
+          <button type="button" class="tool-panel reveal reveal-delay-1" data-tool="km-key" data-tab="km-key">
+            <div class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 2l-2 2m-7.6 7.6a5 5 0 1 1-2.8-2.8L15 4h3v3l3 3-1.5 1.5"/><circle cx="8" cy="16" r="1"/></svg>
+            </div>
+            <div class="tool-file">Khoáng mạch</div>
+            <h3>Khoáng Mạch Key</h3>
+            <p>Panel gọn, bấm Shift+K — tự tìm mỏ theo % thưởng, đoạt mỏ và mua Linh Quang Phù.</p>
+            <div class="tool-tags">
+              <span class="tag">Shift + K</span>
+              <span class="tag">Lọc % thưởng</span>
+              <span class="tag">Hỗ trợ điện thoại</span>
+            </div>
+          </button>
+
+          <button type="button" class="tool-panel reveal reveal-delay-2" data-tool="km" data-tab="km">
+            <div class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 20l7-14 4 8 3-5 4 11H3z"/></svg>
+            </div>
+            <div class="tool-file">Khoáng mạch</div>
+            <h3>Khoáng Mạch Classic</h3>
+            <p>Bản đầy đủ: chọn sẵn mỏ Thượng / Trung / Hạ, khoảng thưởng, tấn công và chiếm chủ mỏ.</p>
+            <div class="tool-tags">
+              <span class="tag">Chọn mỏ sẵn</span>
+              <span class="tag">Chiếm chủ</span>
+              <span class="tag">Xem nhật ký</span>
+            </div>
+          </button>
+
+          <button type="button" class="tool-panel reveal reveal-delay-3" data-tool="luyen-dan" data-tab="luyen-dan">
+            <div class="tool-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M9 3h6M10 3v3.5L6 14a6 6 0 0 0 12 0l-4-7.5V3"/><path d="M9 17h6"/></svg>
+            </div>
+            <div class="tool-file">Lò đan</div>
+            <h3>Luyện Đan</h3>
+            <p>Chuẩn bị túi, mở lò, điều hỏa, chờ chín rồi thu đan — kể cả khi luyện cùng người khác.</p>
+            <div class="tool-tags">
+              <span class="tag">Tự điều hỏa</span>
+              <span class="tag">Quản lý túi</span>
+              <span class="tag">Đồng luyện</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Hướng dẫn nhanh</span>
+          <h2>Cách dùng chỉ 4 bước</h2>
+          <p>Không cần tải phần mềm. Chỉ cần bookmark và trang HH3D đang đăng nhập.</p>
+        </div>
+        <div class="flow reveal">
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <h3>Sao chép bookmark</h3>
+            <p>Bấm nút Copy ở mục Bookmark bên dưới để lấy đường dẫn của công cụ bạn cần.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <h3>Lưu vào trình duyệt</h3>
+            <p>Tạo bookmark mới trên thanh yêu thích, dán nội dung vừa copy vào ô địa chỉ.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <h3>Mở trang HH3D</h3>
+            <p>Đăng nhập game như bình thường, rồi bấm bookmark vừa lưu.</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">04</div>
+            <h3>Cấu hình &amp; chạy</h3>
+            <p>Panel hiện lên góc màn hình — chỉnh tùy chọn rồi bấm chạy. Xem nhật ký ngay trên panel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail" id="detail">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Chi tiết</span>
+          <h2>Mỗi công cụ làm gì?</h2>
+          <p>Chọn tab để xem cách hoạt động bằng lời dễ hiểu và ví dụ nhật ký khi đang chạy.</p>
+        </div>
+
+        <div class="detail-tabs reveal" role="tablist" aria-label="Chọn công cụ">
+          <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="fullhd">FullHD</button>
+          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="km-key">Khoáng Mạch Key</button>
+          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="km">Khoáng Mạch Classic</button>
+          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="luyen-dan">Luyện Đan</button>
+        </div>
+
+        <div class="tab-panel active" id="panel-fullhd" role="tabpanel">
+          <div class="detail-copy">
+            <span class="eyebrow">Full Action Daily</span>
+            <h3>FullHD — làm hết việc hàng ngày</h3>
+            <p>Công cụ xếp các việc theo nhóm và làm lần lượt. Xong việc này mới sang việc kia. Việc cần chờ (theo VIP) sẽ tự nhắc lịch chạy lại.</p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Việc mỗi ngày</strong><span>Điểm danh, vấn đáp, tế lễ, quay phúc vận, nhận event</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Chiến &amp; luyện</strong><span>Đổ thạch, thí luyện tông môn, phúc lợi đường, hoang vực</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Giao lưu &amp; VIP</strong><span>Tiên duyên, ban phúc, tụ bảo các — VIP cao thì chờ ngắn hơn</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Panel đẹp, dễ nhìn</strong><span>Giao diện tối ánh vàng, nhật ký màu sắc, bật/tắt nhanh</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">FullHD · nhật ký</span>
+            </div>
+            <div class="mock-body">
+              <div class="log-line"><span class="t">07:00</span> <span class="ok">✓</span> Điểm danh xong</div>
+              <div class="log-line"><span class="t">07:00</span> <span class="info">→</span> Đang làm vấn đáp</div>
+              <div class="log-line"><span class="t">07:00</span> <span class="ok">✓</span> Quay phúc vận ×3</div>
+              <div class="log-line"><span class="t">07:01</span> <span class="warn">⏳</span> hoang vực — chờ <span class="hi">7 phút nữa</span></div>
+              <div class="log-line"><span class="t">07:08</span> <span class="ok">✓</span> Phúc lợi đường xong</div>
+              <div class="log-line"><span class="t">07:08</span> <span class="info">◆</span> Hết việc tạm thời — chờ lịch tiếp</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-km-key" role="tabpanel">
+          <div class="detail-copy">
+            <span class="eyebrow">Khoáng mạch</span>
+            <h3>Khoáng Mạch Key — chiếm mỏ thông minh</h3>
+            <p>Panel nhỏ gọn, dùng được cả trên điện thoại. Bạn đặt khoảng % thưởng mong muốn và chọn mỏ khoáng; tool tự tìm mỏ phù hợp và vào giúp.</p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Phím tắt Shift+K</strong><span>Mở hoặc đóng panel ngay lập tức</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Chỉ vào mỏ đúng % thưởng</strong><span>Ví dụ chỉ nhận mỏ từ 105% đến 110%</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Đoạt mỏ &amp; Linh Quang Phù</strong><span>Tự chiếm chủ khi đủ điều kiện; mua phù để nhận thưởng thêm</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Đếm ngược lần chạy sau</strong><span>Thấy rõ còn bao lâu sẽ quét mỏ tiếp</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">KM Key · nhật ký</span>
+            </div>
+            <div class="mock-body">
+              <div class="log-line"><span class="info">◆</span> Đang tìm mỏ thưởng <span class="hi">105–110%</span></div>
+              <div class="log-line"><span class="ok">✓</span> Vào mỏ <span class="hi">Khai Nguyên Tiên Vực</span></div>
+              <div class="log-line"><span class="t">thưởng</span> hiện tại <span class="warn">108%</span></div>
+              <div class="log-line"><span class="info">→</span> Đang kiểm tra chủ mỏ để đoạt</div>
+              <div class="log-line"><span class="ok">✓</span> Đã mua Linh Quang Phù · nhận thưởng</div>
+              <div class="log-line"><span class="warn">⏳</span> Lần quét sau sau <span class="hi">2 phút 14 giây</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-km" role="tabpanel">
+          <div class="detail-copy">
+            <span class="eyebrow">Khoáng mạch</span>
+            <h3>Khoáng Mạch Classic — chọn mỏ sẵn</h3>
+            <p>Bạn chọn trước mỏ Thượng, Trung, Hạ muốn ưu tiên. Tool vào mỏ, tấn công nếu cần, và chiếm quyền chủ khi đủ sức.</p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Chọn 3 cấp mỏ</strong><span>Thượng · Trung · Hạ — theo từng vực bạn thích</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Khoảng thưởng tùy chỉnh</strong><span>Chỉ giữ mỏ nằm trong khoảng % bạn đặt</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Tấn công &amp; chiếm chủ</strong><span>Đánh người trong mỏ rồi đổi chủ khi thắng</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Nhật ký rõ ràng</strong><span>Xem từng bước, có nút dừng ngay khi cần</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">KM Classic · nhật ký</span>
+            </div>
+            <div class="mock-body">
+              <div class="log-line"><span class="info">→</span> Đang tải danh sách mỏ Thượng</div>
+              <div class="log-line"><span class="ok">✓</span> Trong mỏ có 3 người</div>
+              <div class="log-line"><span class="warn">⚔</span> Đang tấn công đối thủ</div>
+              <div class="log-line"><span class="ok">✓</span> Đã chiếm chủ mỏ</div>
+              <div class="log-line"><span class="info">◆</span> Thưởng <span class="hi">106%</span> — đúng khoảng bạn đặt</div>
+              <div class="log-line"><span class="ok">✓</span> Giữ mỏ · chờ chu kỳ tiếp theo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-luyen-dan" role="tabpanel">
+          <div class="detail-copy">
+            <span class="eyebrow">Lò đan</span>
+            <h3>Luyện Đan — từ chuẩn bị đến thu đan</h3>
+            <p>Tool đi theo từng bước rõ ràng: dọn túi → mở lò → điều hỏa → chờ chín → thu đan. Nếu luyện cùng người khác, tool chờ lời mời, nhận lời, rồi cùng điều hỏa.</p>
+            <ul class="feature-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Chuẩn bị túi trước khi luyện</strong><span>Mở túi nguyên liệu, phân giải đan kém, thuê Tiêu Viêm nếu cần</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Tự điều hỏa</strong><span>Canh lửa lúc lò nhạy cảm rồi giữ ổn định đến khi đủ điều kiện</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Mua linh dược ở Tụ Bảo Các</strong><span>Theo tùy chọn trên panel, tối đa một lần mỗi ngày</span></div>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <div><strong>Luyện cùng người khác</strong><span>Chờ được mời → nhận lời mời → cùng điều hỏa đến khi xong</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="mock" aria-hidden="true">
+            <div class="mock-bar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-title">Luyện Đan · nhật ký</span>
+            </div>
+            <div class="mock-body">
+              <div class="log-line"><span class="info">◆</span> Khởi động → kiểm tra → <span class="ok">đang chuẩn bị túi</span></div>
+              <div class="log-line"><span class="ok">✓</span> Đã phân giải đan 3★ · mở linh dược</div>
+              <div class="log-line"><span class="warn">◇</span> Đang luyện trong lò</div>
+              <div class="log-line"><span class="info">◇</span> Điều hỏa — đã xong <span class="hi">2 / 3</span></div>
+              <div class="log-line"><span class="warn">⏳</span> Chờ thu đan lúc <span class="hi">14:32</span></div>
+              <div class="state-machine">
+                <span class="sm-node">Chuẩn bị</span><span class="sm-arrow">→</span>
+                <span class="sm-node">Mở lò</span><span class="sm-arrow">→</span>
+                <span class="sm-node active">Điều hỏa</span><span class="sm-arrow">→</span>
+                <span class="sm-node">Thu đan</span><span class="sm-arrow">→</span>
+                <span class="sm-node">Xong</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bookmark" class="bookmark-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cài đặt</span>
+          <h2>Sao chép bookmark</h2>
+          <p>Mỗi công cụ một đường dẫn. Copy → tạo bookmark mới → dán vào ô URL → mở HH3D và bấm bookmark.</p>
+        </div>
+
+        <div class="bookmark-hint reveal">
+          <strong>Mẹo:</strong> Trên Chrome / Edge, bấm chuột phải thanh yêu thích → “Thêm trang” → dán vào ô URL (không phải ô tên).
+        </div>
+
+        <div class="bookmark-list">
+          <article class="bookmark-item reveal" data-script="cip_fullhd.js">
+            <div class="bookmark-head">
+              <div>
+                <div class="bookmark-label">Nhật trình ngày</div>
+                <h3>FullHD</h3>
+                <p>Tự động điểm danh, vấn đáp, hoang vực, phúc lợi và các việc ngày.</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-copy" data-copy>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <code class="bookmark-code" tabindex="0"></code>
+          </article>
+
+          <article class="bookmark-item reveal reveal-delay-1" data-script="cip_km_key.js">
+            <div class="bookmark-head">
+              <div>
+                <div class="bookmark-label">Khoáng mạch</div>
+                <h3>Khoáng Mạch Key</h3>
+                <p>Panel mới — lọc % thưởng, đoạt mỏ, mua Linh Quang Phù. Hotkey Shift+K.</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-copy" data-copy>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <code class="bookmark-code" tabindex="0"></code>
+          </article>
+
+          <article class="bookmark-item reveal reveal-delay-2" data-script="cip_km.js">
+            <div class="bookmark-head">
+              <div>
+                <div class="bookmark-label">Khoáng mạch</div>
+                <h3>Khoáng Mạch Classic</h3>
+                <p>Chọn sẵn mỏ Thượng / Trung / Hạ, tấn công và chiếm chủ.</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-copy" data-copy>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <code class="bookmark-code" tabindex="0"></code>
+          </article>
+
+          <article class="bookmark-item reveal reveal-delay-3" data-script="luyen-dan.js">
+            <div class="bookmark-head">
+              <div>
+                <div class="bookmark-label">Lò đan</div>
+                <h3>Luyện Đan</h3>
+                <p>Chuẩn bị túi, mở lò, điều hỏa, thu đan — hỗ trợ luyện cùng người khác.</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-copy" data-copy>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy</span>
+              </button>
+            </div>
+            <code class="bookmark-code" tabindex="0"></code>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="arch">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">An tâm khi dùng</span>
+          <h2>Vì sao hợp với bạn</h2>
+          <p>Thiết kế để dùng trên trang game đang mở — nhẹ, có nhật ký, dừng được bất cứ lúc nào.</p>
+        </div>
+        <div class="arch-grid">
+          <article class="arch-item reveal">
+            <div class="arch-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 7h16M4 12h10M4 17h14"/></svg>
+            </div>
+            <h3>Chạy ngay trên web</h3>
+            <p>Không cài phần mềm. Bookmark tải công cụ về trang HH3D bạn đang đăng nhập.</p>
+          </article>
+          <article class="arch-item reveal reveal-delay-1">
+            <div class="arch-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/></svg>
+            </div>
+            <h3>Ghi nhớ tùy chọn</h3>
+            <p>Cài đặt theo từng tài khoản được lưu lại. Lần sau mở tool là dùng tiếp cấu hình cũ.</p>
+          </article>
+          <article class="arch-item reveal reveal-delay-2">
+            <div class="arch-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>Thấy rõ đang làm gì</h3>
+            <p>Panel đè lên game, không phá giao diện gốc. Nhật ký lọc thành công / lỗi / cảnh báo để dễ theo dõi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Hỗ trợ</span>
+          <h2>Liên hệ khi cần giúp</h2>
+          <p>Gặp lỗi khi chạy bookmark, cần hướng dẫn cài đặt, hoặc muốn hỏi cấu hình — vào Discord cộng đồng để được hỗ trợ trực tiếp.</p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div class="contact-main">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div>
+              <h3>Discord cộng đồng</h3>
+              <p>Kênh hỗ trợ chính. Tham gia để hỏi nhanh, nhận cập nhật và được hướng dẫn trực tiếp.</p>
+              <p class="contact-people">Liên hệ hỗ trợ — Tông Chủ / Phó Tông Chủ: <strong>Lạc Hoa Phong</strong> · Tông Chủ / Phó Tông Chủ: <strong>Ám Linh Giới</strong></p>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary"
+              href="https://discord.gg/JP64pSwybA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.3 4.4A19 19 0 0 0 15.6 3l-.3.6a17 17 0 0 1 4 1.9 13 13 0 0 0-10.6 0 17 17 0 0 1 4-1.9L12.4 3a19 19 0 0 0-4.7 1.4C3.6 8.3 2.8 12.1 3.1 15.8a19.2 19.2 0 0 0 5.8 3 14 14 0 0 0 1.3-2.1l-.7-.3a12.4 12.4 0 0 1-1.9-.9l.1-.1c.4.2.8.4 1.2.5a13.6 13.6 0 0 0 11.2 0c.4-.1.8-.3 1.2-.5l.1.1a12.4 12.4 0 0 1-1.9.9l-.7.3a14 14 0 0 0 1.3 2.1 19 19 0 0 0 5.8-3c.4-4.2-.7-7.9-2.9-11.4zM9.7 13.8c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.5.7 1.4 1.5-.6 1.5-1.4 1.5zm4.6 0c-.8 0-1.4-.7-1.4-1.5s.6-1.5 1.4-1.5 1.5.7 1.4 1.5-.6 1.5-1.4 1.5z"/></svg>
+              Vào Discord
+            </a>
+            <a class="btn btn-ghost" href="#bookmark">Quay lại Bookmark</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <h2>Chọn đúng công cụ, copy một lần</h2>
+          <p>FullHD cho nhật trình · Khoáng Mạch cho mỏ · Luyện Đan cho lò đan.</p>
+          <div class="cta-actions">
+            <a href="#bookmark" class="btn btn-primary">Đến mục Bookmark</a>
+            <a href="#contact" class="btn btn-ghost">Cần hỗ trợ?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© HH3D Companion · FullHD · Khoáng Mạch · Luyện Đan</p>
+      <ul class="footer-links">
+        <li><a href="#tools">Công cụ</a></li>
+        <li><a href="#bookmark">Bookmark</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="https://discord.gg/JP64pSwybA" target="_blank" rel="noopener noreferrer">Discord</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>Đã sao chép!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
